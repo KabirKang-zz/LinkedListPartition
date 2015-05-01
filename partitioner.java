@@ -7,6 +7,16 @@ public class partitioner {
 		LinkedListNode tail = n;
 
 
+		while(n != null){
+			LinkedListNode next = n.next;
+
+			if(n.data<x){
+
+			}
+			else {
+
+			}
+		}
 
 		tail.next = null;
 		return head;
@@ -14,7 +24,7 @@ public class partitioner {
 
 	public static void main(String[] args) {
 		LinkedListNode n = new LinkedListNode(1);
-		System.out.println(n.getData());
+		System.out.println(n.data;
 	}
 
 }

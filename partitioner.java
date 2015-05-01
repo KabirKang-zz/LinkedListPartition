@@ -11,14 +11,20 @@ public class partitioner {
 			LinkedListNode next = n.next;
 
 			if(n.data<x){
-
+				n.next = head;
+				head = n;
 			}
 			else {
-
+				tail.next = n;
+				tail = n;
 			}
+
+			n = next;
+
 		}
 
 		tail.next = null;
+		
 		return head;
 	}
 
